@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Restaurant</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    #home {
+      background: url('picz/homepic2.jpg');
+      color: white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+    .hero-overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 100px 20px;
+    }
+    .menu-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+ 
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">www.flavor town.lk</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="vh-100 d-flex align-items-center justify-content-center text-center">
+    <div class="hero-overlay rounded">
+      <h1 class="display-4">Welcome to Flavor Town</h1>
+      <p class="lead">Serving taste & tradition daily</p>
+      <a href="#menu" class="btn btn-outline-light btn-lg mt-3">View Our Menu</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="picz/logo.jpg" class="img-fluid rounded" alt="About">
+        </div>
+        <div class="col-md-6">
+          <p>Founded in 2010, MyRestaurant is a family-run dining experience inspired by Sri Lankan flavors and global cuisine. We believe in high-quality ingredients, warm hospitality, and making every meal memorable.</p>
+          <p>Whether it's a romantic dinner or a group celebration, we make it special.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Starters / Appetizers</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_418125508.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Garlic Butter Prawns</h5>
+            <p class="card-text">prawns, garlic, white wine, butter, olive oil and lemon.</p>
+            <p class="fw-bold">LKR 2,800</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://www.eatyourselfskinny.com/wp-content/uploads/2023/08/chicken-skewers-5-scaled.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Chicken Satay Skewers</h5>
+            <p class="card-text">Grilled chicken skewers flavored with soy, lime, and ginger and served with a peanut dipping sauce, they taste succulent, a little spicy, and a little sweet.</p>
+            <p class="fw-bold">LKR 1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://freshchoice.imgix.net/assets/Recipes/Pumpkin-Soup.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Creamy Pumpkin Soup</h5>
+            <p class="card-text">A classic, super easy pumpkin soup that's fast to make. Thick, creamy and dreamy, with sweet pumpkin flavour and great savoury undertones.</p>
+            <p class="fw-bold">LKR 950</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mx-auto" id="special-item">
+        <div class="card menu-card">
+          <img src="https://biteswithbri.com/wp-content/uploads/2022/07/CreamCheeseStuffedMushrooms05.jpg" class="card-img-top" alt="Special Dish">
+          <div class="card-body">
+            <h5 class="card-title">Cheese-Stuffed Mushrooms</h5>
+            <p class="card-text">This stuffed mushrooms recipe fills mushroom caps with a garlicky cream cheese and Parmesan filling.</p>
+            <p class="fw-bold">LKR 1,150</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Western</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://www.wholesomeyum.com/wp-content/uploads/2022/12/wholesomeyum-Garlic-Butter-Chicken-1.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Grilled Chicken with Herb Butter</h5>
+            <p class="card-text">Easy and simple seasoned and baked chicken breasts topped with rich butter sauce with fresh herbs and garlic.</p>
+            <p class="fw-bold">LKR 1,950</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://www.eatyourselfskinny.com/wp-content/uploads/2023/08/chicken-skewers-5-scaled.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Spaghetti Carbonara or Arrabbiata</h5>
+            <p class="card-text">This foolproof recipe for silky, guanciale- and cheese-sauced spaghetti carbonara uses a double boiler to prevent egg yolks from curdling.</p>
+            <p class="fw-bold">LKR 1,650</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://e0.pxfuel.com/wallpapers/610/652/desktop-wallpaper-chicken-burger-wall-food-hamburger-lettuce-beef-meat-tomato-in-2020-burger-and-fries-chicken-burgers-fast-food-restaurant-chicken-sandwich.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Beef or Chicken Burger with Fries</h5>
+            <p class="card-text">A chicken burger that's easy to make with ground chicken, seasoned bread crumbs, grated onion, and garlic.</p>
+            <p class="fw-bold">LKR 1,200</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Sri Lankan</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://images.pexels.com/photos/9557675/pexels-photo-9557675.jpeg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Rice & Curry Combo (chicken, fish, or veg)</h5>
+            <p class="card-text">Rice, dhal and fried fish (veg optional). Rice chicken curry, dhal and veg of choice. Rice, fried egg and beetroot and dha</p>
+            <p class="fw-bold">LKR 1,400</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://tb-static.uber.com/prod/image-proc/processed_images/b895a684f043c79d93790099b39bd22c/445a4b2618e10f7db95d4f17a85b117d.jpeg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">String Hoppers with milk curry & Pol Sambol</h5>
+            <p class="card-text">A popular Sri Lankan dish consisting of delicate, steamed rice noodles formed into a nest-like shape</p>
+            <p class="fw-bold">LKR 1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://i.pinimg.com/736x/01/03/6e/01036e9358764e23e80ad73c597212d0.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Chicken or Seafood Kottu Roti</h5>
+            <p class="card-text">A dish made from chopped flatbread, vegetables, and a choice of meat (chicken or seafood) or a vegetarian option.</p>
+            <p class="fw-bold">LKR 1,500</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Salads</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/Greek-Salad-6-1.jpg" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Greek Salad with Feta</h5>
+            <p class="card-text"> sliced cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese. </p>
+            <p class="fw-bold">LKR 1,200</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://cravingsomethinghealthy.com/wp-content/uploads/2015/01/Mango-Avocado-Salad-5.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Tropical Mango & Avocado Salad</h5>
+            <p class="card-text">This delightful dish combines the sweetness of ripe mangoes, the creaminess of avocados, the freshness of herbs and the zest of lime.</p>
+            <p class="fw-bold">LKR 1,350</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2023/08/Grilled-Chicken-Caesar-Salad-11.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Caesar Salad with Grilled Chicken</h5>
+            <p class="card-text">chopped romaine lettuce, garlicky croutons, and a creamy dressing made with eggs, olive oil, lemon, Parmesan, Worcestershire sauce, and anchovies—plus grilled chicken.</p>
+            <p class="fw-bold">LKR 1,400</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="menu" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Beverages</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://vinut.com.vn/wp-content/webp-express/webp-images/uploads/2024/12/website-13-1.png.webp" class="card-img-top" alt="Dish 1">
+          <div class="card-body">
+            <h5 class="card-title">Fresh Lime Juice / Mango Juice</h5>
+            <p class="fw-bold text-primary">LKR 450</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://mocktail.net/wp-content/uploads/2021/08/Passion-Fruit-Mojito-Mocktail_ig-480x270.jpg" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Passion Fruit Mojito (non-alcoholic)</h5>
+            <p class="fw-bold text-primary">LKR 600</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card">
+          <img src="https://static1.squarespace.com/static/5cef7b136434550001a53d10/5cef8b66bd293b0001bb0883/5cef8b66bd293b0001bb0893/1650475012843/Boba-Coffee.jpg?format=1500w" class="card-img-top" alt="Dish 2">
+          <div class="card-body">
+            <h5 class="card-title">Iced Coffee / Milk Tea</h5>
+            <p class="fw-bold text-primary">LKR 500</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mx-auto" id="special-item">
+        <div class="card menu-card">
+          <img src="https://brodandtaylor.com/cdn/shop/articles/dehydrated-tea-thumb_1024x.jpg?v=1639765759" class="card-img-top" alt="Special Dish">
+          <div class="card-body">
+            <h5 class="card-title">Herbal Drinks</h5>
+            <p class="card-text">Belimal, Ranawara, etc.</p>
+            <p class="fw-bold text-primary">LKR 550</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mx-auto" id="special-item">
+        <div class="card menu-card">
+          <img src="https://www.emborg.com/app/uploads/2023/07/1200x900px_Creamy_Strawberry_Milkshakes.png.webp" class="card-img-top" alt="Special Dish">
+          <div class="card-body">
+            <h5 class="card-title">Milkshakes</h5>
+            <p class="card-text">Vanilla, Chocolate, Oreo</p>
+            <p class="fw-bold text-primary">LKR 650</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row justify-content-end">  <!-- Added justify-content-end here -->
+            <div class="col-md-6 mb-4">  <!-- This will now align to the right -->
+                <h5><i class="bi bi-geo-alt-fill"></i> Location</h5>
+                <p>123 Galle Road, Colombo 03, Sri Lanka</p>
+                <h5><i class="bi bi-clock-fill"></i> Opening Hours</h5>  <!-- Fixed typo in icon class -->
+                <p>Daily: 10:00 AM - 10:00 PM</p>
+                <h5><i class="bi bi-telephone-fill"></i> Phone</h5>
+                <p>+94 77 123 4567</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>  <!-- Fixed unclosed section tag -->
+    <!-- Footer content here -->
+</footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 MyRestaurant. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
